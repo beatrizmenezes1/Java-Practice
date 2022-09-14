@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <title>Javascript: Início</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Conceitos básicos de Javascript</h1>
+        </header>
+        <div>
+            <ul>
+                <li>Trabalhando com variáveis</li>
+                <li>Comentários</li>
+                <li>Comandos de entrada e saída</li>
+                <li>Refresh e Redirect</li>
+                <li>Modificando o HTML</li>
+                <li>Funções</li>
+                <li>Array</li>
+            </ul>
+        </div>
+        <br>
+        <div class="variavel">
+            <h2>Trabalhando com variáveis</h2>
+        </div>
+        <br>
+        <div class="entrada-saida">
+            <h2>Comandos de entrada e saída</h2>
+        </div>
+        <br>
+        <div class="refresh-redirect">
+            <h2>Refresh e Redirect</h2>
+            <button onclick="window.location.href = 'outra-pag.html'";>Ir a outra pag</button>
+            <button onclick="window.location.href=window.location.href">Atualize a pagina</button>
+        </div>
+        <br>
+        <div class="modificando-html">
+            <div id="area">
+                Bem vindo 
+            </div>
+            <button onclick="document.getElementById('area').innerHTML += prompt('Qual seu nome?');">Entrar</button>
+            
+            <!-- ----------------------------------- -->
+            <br>
+            <br>
+            <div id="area-2">
+                Digite o nome do botao:
+            </div>
+            <button onclick="this.innerHTML = prompt('Qual nome do botao?');">Qual meu nome?</button>
+
+            <!-- ----------------------------------- -->
+            <br>
+            <br>
+
+            <div id="area-3">
+                usando funcao:
+            </div>
+            <button onclick="entrar()">Digite seu nome</button>
+
+        </div>
+    </main>
+    <script src="js/variavel.js"></script>
+    <script src="js/comentarios.js"></script>
+    <script src="js/entrada_saida.js"></script>
+    <script src="js/funcoes.js"></script>
+</body>
+</html>
